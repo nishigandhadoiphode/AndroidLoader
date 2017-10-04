@@ -10,28 +10,28 @@ import UIKit
 
 
 // MARK: -  Running Device
-let SCREEN_WIDTH = UIScreen.main.bounds.width
-let SCREEN_HEIGHT = UIScreen.main.bounds.height
+public let SCREEN_WIDTH = UIScreen.main.bounds.width
+public let SCREEN_HEIGHT = UIScreen.main.bounds.height
 
 
-class AndroidLoaderView: UIView
+open class AndroidLoaderView: UIView
 {
 
-    let loader = UIActivityIndicatorView()
-    let loaderLabel = UILabel()
+    public let loader = UIActivityIndicatorView()
+    public let loaderLabel = UILabel()
     
     //Properties
     
-    var DEFAULT_SIZE_LOADER: CGFloat = 50
+    public var DEFAULT_SIZE_LOADER: CGFloat = 50
     
-    var LABEL_FONT: UIFont! = UIFont(name: "Arial", size: 15)
-    var LABEL_TEXT_COLOR: UIColor! = UIColor.white
-    var LABEL_BG_COLOR: UIColor! = UIColor.clear
-    var LABEL_NO_OF_LINES: Int = 0
-    var VIEW_BG_COLOR: UIColor! = UIColor.darkGray
+    public var LABEL_FONT: UIFont! = UIFont(name: "Arial", size: 15)
+    public var LABEL_TEXT_COLOR: UIColor! = UIColor.white
+    public var LABEL_BG_COLOR: UIColor! = UIColor.clear
+    public var LABEL_NO_OF_LINES: Int = 0
+    public var VIEW_BG_COLOR: UIColor! = UIColor.darkGray
     
     
-    func initializeLoaderView(parentView:UIView,withText: String)
+   public  func initializeLoaderView(parentView:UIView,withText: String)
     {
         // Desinging the label
         self.loaderLabel.backgroundColor = LABEL_BG_COLOR
@@ -91,7 +91,7 @@ class AndroidLoaderView: UIView
 
     }
     
-    func hideLoaderFromView(parentView:UIView)
+   public  func hideLoaderFromView(parentView:UIView)
     {
         // make the parent view background back to active
       _ =   parentView.subviews.map {
@@ -101,7 +101,7 @@ class AndroidLoaderView: UIView
         self.removeFromSuperview()
     }
     
-    func showLoaderOnView(parentView:UIView, text:String)
+   public  func showLoaderOnView(parentView:UIView, text:String)
     {
         // make the parent view background inactive
         if !self.loader.isAnimating
