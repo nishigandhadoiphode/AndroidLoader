@@ -12,7 +12,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AndroidLoaderForiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -44,21 +43,46 @@
                                     <action selector="stopBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bn-dr-Kqn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello hi how are u" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyh-iW-Ku2">
+                                <rect key="frame" x="100" y="451" width="181" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4Pi-ZZ-HXe"/>
+                                    <constraint firstAttribute="width" constant="181" id="TMt-ec-ULR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warning.png" translatesAutoresizingMaskIntoConstraints="NO" id="fAC-sr-KuK">
+                                <rect key="frame" x="31" y="448" width="36" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Itz-7f-qE6"/>
+                                    <constraint firstAttribute="width" constant="36" id="zUJ-yb-VgI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0xu-vz-ix5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="8y7-x2-xT0"/>
                             <constraint firstItem="od8-hL-eO6" firstAttribute="leading" secondItem="0xu-vz-ix5" secondAttribute="trailing" constant="24" id="B3y-1C-4br"/>
                             <constraint firstItem="0xu-vz-ix5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="115" id="Jyb-e2-wrj"/>
+                            <constraint firstItem="fAC-sr-KuK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="31" id="NHt-Ti-Kf0"/>
                             <constraint firstItem="od8-hL-eO6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="O3F-7J-xAL"/>
                             <constraint firstItem="od8-hL-eO6" firstAttribute="width" secondItem="0xu-vz-ix5" secondAttribute="width" id="PZq-1w-mKT"/>
                             <constraint firstItem="od8-hL-eO6" firstAttribute="height" secondItem="0xu-vz-ix5" secondAttribute="height" id="YMV-qO-vSJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fAC-sr-KuK" secondAttribute="bottom" constant="5" id="ZFj-gH-fb2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dyh-iW-Ku2" secondAttribute="bottom" constant="8" id="cPH-4K-Zw7"/>
+                            <constraint firstAttribute="trailing" secondItem="Dyh-iW-Ku2" secondAttribute="trailing" constant="39" id="lHY-gu-eM0"/>
                             <constraint firstAttribute="trailing" secondItem="od8-hL-eO6" secondAttribute="trailing" constant="115" id="mAV-uh-Bun"/>
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-960" y="-164"/>
+            <point key="canvasLocation" x="-960" y="-165"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="warning.png" width="30" height="30"/>
+    </resources>
 </document>

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4712312A1F8B76140050193B /* failure.png in Resources */ = {isa = PBXBuildFile; fileRef = 471231211F8B76140050193B /* failure.png */; };
+		4712312B1F8B76140050193B /* failure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471231221F8B76140050193B /* failure@2x.png */; };
+		4712312C1F8B76140050193B /* failure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471231231F8B76140050193B /* failure@3x.png */; };
+		4712312D1F8B76140050193B /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 471231241F8B76140050193B /* success.png */; };
+		4712312E1F8B76140050193B /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471231251F8B76140050193B /* success@2x.png */; };
+		4712312F1F8B76140050193B /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471231261F8B76140050193B /* success@3x.png */; };
+		471231301F8B76140050193B /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 471231271F8B76140050193B /* warning.png */; };
+		471231311F8B76140050193B /* warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471231281F8B76140050193B /* warning@2x.png */; };
+		471231321F8B76140050193B /* warning@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471231291F8B76140050193B /* warning@3x.png */; };
+		471410841F85F6D300DD6EFF /* AndroidSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471410831F85F6D300DD6EFF /* AndroidSnackBar.swift */; };
 		473432341F83B410000EF3EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473432331F83B410000EF3EE /* ViewController.swift */; };
 		47459AA31F7CB615001EB670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47459AA21F7CB615001EB670 /* AppDelegate.swift */; };
 		47459AA81F7CB615001EB670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47459AA61F7CB615001EB670 /* Main.storyboard */; };
@@ -16,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471231211F8B76140050193B /* failure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failure.png; sourceTree = "<group>"; };
+		471231221F8B76140050193B /* failure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "failure@2x.png"; sourceTree = "<group>"; };
+		471231231F8B76140050193B /* failure@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "failure@3x.png"; sourceTree = "<group>"; };
+		471231241F8B76140050193B /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		471231251F8B76140050193B /* success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@2x.png"; sourceTree = "<group>"; };
+		471231261F8B76140050193B /* success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@3x.png"; sourceTree = "<group>"; };
+		471231271F8B76140050193B /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
+		471231281F8B76140050193B /* warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning@2x.png"; sourceTree = "<group>"; };
+		471231291F8B76140050193B /* warning@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning@3x.png"; sourceTree = "<group>"; };
+		471410831F85F6D300DD6EFF /* AndroidSnackBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndroidSnackBar.swift; sourceTree = "<group>"; };
 		473432331F83B410000EF3EE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47459A9F1F7CB615001EB670 /* AndroidLoaderForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidLoaderForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47459AA21F7CB615001EB670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		471231201F8B76140050193B /* icon_images */ = {
+			isa = PBXGroup;
+			children = (
+				471231211F8B76140050193B /* failure.png */,
+				471231221F8B76140050193B /* failure@2x.png */,
+				471231231F8B76140050193B /* failure@3x.png */,
+				471231241F8B76140050193B /* success.png */,
+				471231251F8B76140050193B /* success@2x.png */,
+				471231261F8B76140050193B /* success@3x.png */,
+				471231271F8B76140050193B /* warning.png */,
+				471231281F8B76140050193B /* warning@2x.png */,
+				471231291F8B76140050193B /* warning@3x.png */,
+			);
+			path = icon_images;
+			sourceTree = "<group>";
+		};
 		47459A961F7CB614001EB670 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +92,11 @@
 		47459AA11F7CB615001EB670 /* AndroidLoaderForiOS */ = {
 			isa = PBXGroup;
 			children = (
+				471231201F8B76140050193B /* icon_images */,
 				47459AA21F7CB615001EB670 /* AppDelegate.swift */,
 				473432331F83B410000EF3EE /* ViewController.swift */,
 				47459AB61F7CB708001EB670 /* AndroidLoaderView.swift */,
+				471410831F85F6D300DD6EFF /* AndroidSnackBar.swift */,
 				47459AA61F7CB615001EB670 /* Main.storyboard */,
 				47459AA91F7CB615001EB670 /* Assets.xcassets */,
 				47459AAB1F7CB615001EB670 /* LaunchScreen.storyboard */,
@@ -127,8 +165,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				471231301F8B76140050193B /* warning.png in Resources */,
 				47459AAD1F7CB615001EB670 /* LaunchScreen.storyboard in Resources */,
+				471231321F8B76140050193B /* warning@3x.png in Resources */,
+				4712312D1F8B76140050193B /* success.png in Resources */,
 				47459AAA1F7CB615001EB670 /* Assets.xcassets in Resources */,
+				4712312C1F8B76140050193B /* failure@3x.png in Resources */,
+				4712312E1F8B76140050193B /* success@2x.png in Resources */,
+				4712312A1F8B76140050193B /* failure.png in Resources */,
+				4712312F1F8B76140050193B /* success@3x.png in Resources */,
+				471231311F8B76140050193B /* warning@2x.png in Resources */,
+				4712312B1F8B76140050193B /* failure@2x.png in Resources */,
 				47459AA81F7CB615001EB670 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +189,7 @@
 			files = (
 				473432341F83B410000EF3EE /* ViewController.swift in Sources */,
 				47459AA31F7CB615001EB670 /* AppDelegate.swift in Sources */,
+				471410841F85F6D300DD6EFF /* AndroidSnackBar.swift in Sources */,
 				47459AB71F7CB708001EB670 /* AndroidLoaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
