@@ -16,5 +16,5 @@ This is a very simple android like loader which has a label and a default activi
       myCustomLoader.hideLoaderFromView()
       mySnackBar.hideSnackBarFromView()
 
-*If you have any suggestions or inputs then you are most welcome. You can write me mail at* nsdoiphode@gmail.com 
-*Please keep your Condemn with you i have many others things to entertain. :) Happy Coding*
+*If you have any suggestions or inputs then you are most welcome. You can write me Email at* nsdoiphode@gmail.com 
+*Please keep your condemn with you i have many others things to entertain. :) Happy Coding*
