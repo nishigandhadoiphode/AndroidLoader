@@ -9,7 +9,7 @@ This is a very simple android like loader which has a label and a default activi
     let mySnackBar = AndroidSnackBar()
     
     myCustomLoader.showLoaderOnView(currentView: self.view, text: "Loading...")
-    mySnackBar.showSnackBarView(currentView: self.view, withText: "Task updated       successfully",snackBarType:SnackBarType.SnackBarForSuccess)
+    mySnackBar.showSnackBarView(currentView: self.view, withText: "Profile updated successfully", snackBarType:SnackBarType.SnackBarForSuccess)
 
 *To hide the loader*
   
