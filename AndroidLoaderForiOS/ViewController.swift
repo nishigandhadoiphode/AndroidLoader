@@ -20,15 +20,17 @@ class ViewController: UIViewController {
     }
     @IBAction func startBtnClicked(_ sender: Any) {
         
+        // To call SnackBar :-
         mybar.showSnackBarView(currentView: self.view, withText: "Profile updated successfully", snackBarType:SnackBarType.SnackBarForSuccess)
-        
-//        myLoader.showLoaderOnView(parentView: self.view, text: "Loading...")
+        // To call loader :-
+        myLoader.showLoaderOnView(currentView: self.view, text: "Loading...")
     }
 
     @IBAction func stopBtnClicked(_ sender: Any) {
-        
+        // to remove snackbar :-
         mybar.hideSnackBarFromView()
-//        myLoader.hideLoaderFromView(parentView: self.view)
+        // to remove loader :-
+        myLoader.hideLoaderFromView()
         
     }
     override func didReceiveMemoryWarning() {

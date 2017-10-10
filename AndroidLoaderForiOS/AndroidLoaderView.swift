@@ -19,7 +19,8 @@ class AndroidLoaderView: UIView
 
     let loader = UIActivityIndicatorView()
     let loaderLabel = UILabel()
-    
+    var parentView = UIView()
+
     //Properties
     
     var DEFAULT_SIZE_LOADER: CGFloat = 50
@@ -31,7 +32,7 @@ class AndroidLoaderView: UIView
     var VIEW_BG_COLOR: UIColor! = UIColor.darkGray
     
     
-    func initializeLoaderView(parentView:UIView,withText: String)
+    func initializeLoaderView(withText: String)
     {
         // Desinging the label
         self.loaderLabel.backgroundColor = LABEL_BG_COLOR
@@ -74,8 +75,8 @@ class AndroidLoaderView: UIView
         }
         
         self.frame = frameOfLoader
-        self.center = parentView.center
-        parentView.addSubview(self)
+        self.center = self.parentView.center
+        self.parentView.addSubview(self)
 
         // setting x and y of subviews
         
@@ -91,25 +92,28 @@ class AndroidLoaderView: UIView
 
     }
     
-    func hideLoaderFromView(parentView:UIView)
+    func hideLoaderFromView()
     {
+        
         // make the parent view background back to active
-      _ =   parentView.subviews.map {
+      _ =   self.parentView.subviews.map {
             $0.alpha = 1
         }
         self.loader.stopAnimating()
         self.removeFromSuperview()
     }
     
-    func showLoaderOnView(parentView:UIView, text:String)
+    func showLoaderOnView(currentView:UIView, text:String)
     {
+        self.parentView = currentView
+        
         // make the parent view background inactive
         if !self.loader.isAnimating
         {
-            _ =  parentView.subviews.map {
+            _ =  self.parentView.subviews.map {
                 $0.alpha = 0.3
             }
-            self.initializeLoaderView(parentView: parentView, withText: text)
+            self.initializeLoaderView(withText: text)
 
         }
     }
